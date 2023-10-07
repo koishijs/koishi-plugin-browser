@@ -1,0 +1,68 @@
+{
+  "name": "koishi-plugin-browser",
+  "description": "Services for Koishi Online",
+  "version": "1.0.0",
+  "main": "lib/node.js",
+  "module": "lib/index.mjs",
+  "typings": "lib/index.d.ts",
+  "files": [
+    "lib",
+    "dist"
+  ],
+  "author": "Shigma <shigma10826@gmail.com>",
+  "scripts": {
+    "build": "tsc -b && koishi-console build"
+  },
+  "license": "AGPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/koishijs/koishi-plugin-browser.git"
+  },
+  "bugs": {
+    "url": "https://github.com/koishijs/koishi-plugin-browser/issues"
+  },
+  "homepage": "https://github.com/koishijs/koishi-plugin-browser",
+  "keywords": [
+    "bot",
+    "chatbot",
+    "koishi",
+    "plugin",
+    "console",
+    "online",
+    "playground",
+    "service",
+    "canvas",
+    "puppeteer",
+    "html",
+    "render"
+  ],
+  "koishi": {
+    "portable": true,
+    "service": {
+      "implements": [
+        "component:html",
+        "canvas"
+      ]
+    },
+    "description": {
+      "en": "Services for Koishi Online",
+      "zh": "Koishi Online 服务支持"
+    }
+  },
+  "peerDependencies": {
+    "koishi": "^4.15.0"
+  },
+  "devDependencies": {
+    "@koishijs/client": "^5.15.0",
+    "@koishijs/eslint-config": "^1.0.4",
+    "@types/node": "^20.4.4",
+    "esbuild": "^0.18.14",
+    "esbuild-register": "^3.4.2",
+    "eslint": "^8.45.0",
+    "koishi": "^4.15.0",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "@koishijs/canvas": "^0.1.2"
+  }
+}
