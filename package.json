@@ -1,7 +1,7 @@
 {
   "name": "koishi-plugin-browser",
-  "description": "Services for Koishi Online",
-  "version": "1.0.0",
+  "description": "Service Implementations for Koishi Online",
+  "version": "1.0.3",
   "main": "lib/node.js",
   "module": "lib/index.mjs",
   "typings": "lib/index.d.ts",
@@ -37,7 +37,7 @@
     "render"
   ],
   "koishi": {
-    "portable": true,
+    "browser": true,
     "service": {
       "implements": [
         "component:html",
@@ -45,8 +45,8 @@
       ]
     },
     "description": {
-      "en": "Services for Koishi Online",
-      "zh": "Koishi Online 服务支持"
+      "en": "Service Implementations for Koishi Online",
+      "zh": "Koishi Online 扩展服务实现"
     }
   },
   "peerDependencies": {
@@ -63,6 +63,6 @@
     "typescript": "^5.1.6"
   },
   "dependencies": {
-    "@koishijs/canvas": "^0.1.2"
+    "@koishijs/canvas": "^0.2.0"
   }
 }
